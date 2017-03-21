@@ -31,7 +31,6 @@ if (r == contents.regexps.length) {
 
 for (var p = 0; p < contents.regexps[r].patterns.length; p++) {
   if (str.match(new RegExp("^" + contents.regexps[r].patterns[p].pattern + "$"))) {
-    console.log(new RegExp("^" + contents.regexps[r].patterns[p].pattern + "$"));
     retval.push(contents.regexps[r].patterns[p].type["en-US"]);
     funk_q.push(contents.regexps[r].patterns[p].func);
   }
