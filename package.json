@@ -6,6 +6,7 @@
   "dependencies": {
     "disconnect": "^1.1.0",
     "fs": "0.0.1-security",
+    "https": "^1.0.0",
     "ls": "^0.2.1"
   }
 }

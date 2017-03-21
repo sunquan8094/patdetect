@@ -1,6 +1,10 @@
 # PatDetect Project
 This project aims to enumerate all of the world's commonly used string patterns.
 
+## Project Dependencies
+- [Discogs API](https://www.discogs.com/developers/)
+- [ZipCodeAPI.com](https://www.zipcodeapi.com/)
+
 ## Contributing
 Please do not edit the README.md file yourself. The only things I shall see in the PRs submitted to me will be appropriate edits to the `regexp_*.json` files. All other edits will be reviewed on a case-by-case basis.
 

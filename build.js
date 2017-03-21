@@ -10,6 +10,10 @@ ls("./*", {type: 'file'}, /regexps_.*json/, function(file) {
 process.stdout.write("# PatDetect Project\n");
 process.stdout.write("This project aims to enumerate all of the world's commonly used string patterns.\n\n");
 
+process.stdout.write("## Project Dependencies\n");
+process.stdout.write("- [Discogs API](https://www.discogs.com/developers/)\n");
+process.stdout.write("- [ZipCodeAPI.com](https://www.zipcodeapi.com/)\n\n");
+
 process.stdout.write("## Contributing\n");
 process.stdout.write("Please do not edit the README.md file yourself. ");
 process.stdout.write("The only things I shall see in the PRs submitted to me will be appropriate ");

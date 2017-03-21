@@ -1,6 +1,8 @@
 const fs = require("fs");
 const ls = require("ls");
+const https = require("https");
 const Discogs = require("disconnect").Client;
+
 var str = process.argv[2];
 
 var contents = {};

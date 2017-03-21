@@ -26,7 +26,10 @@
         "en-US": "ZIP Codes in the United States"
       },
       "pattern": "[0-9]{5}(-[0-9]{4})?",
-      "func": "0"
+      "func": {
+        "func": "function func(str, cb) { var r = ''; var req = https.get('https://www.zipcodeapi.com/rest/' + encodeURIComponent(config.settings.zipcodeapi.key) + '/info.json/' + encodeURIComponent(str), (res) => { res.on('data', (d) => { r += d; }); res.on('end', function() { cb(r); }); }); }",
+        "cb": "function cb(str) { var data = JSON.parse(str); console.log('* ' + data.city + ', ' + data.state); }"
+      }
     }
   ]
 }
