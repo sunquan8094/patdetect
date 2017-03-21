@@ -39,7 +39,8 @@
       },
       "pattern": "([A-Z0-9]+[A-Z][0-9]{3}[A-Z]?)",
       "func": {
-        "func": "var d = new Discogs(config.settings.discogs); return d.database().search(str, {}, cb);",
+        "data": "var disc = new Discogs(config.settings.discogs);",
+        "func": "return disc.database().search(str, {}, cb);",
         "cb": "(err, data) => { if (!err) console.log('* ' + data.results[0].title); }"
       }
     }

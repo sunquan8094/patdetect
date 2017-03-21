@@ -45,6 +45,7 @@ else {
     console.log("- " + retval[g]);
     if (funk_q[g] !== "0")
     {
+      eval(funk_q[g].data);
       eval("function func(str,cb) { " + funk_q[g].func + " }");
       eval("var cb = " + funk_q[g].cb + ";");
       func(str, cb);
