@@ -1,6 +1,7 @@
 {
   "name": "patdetect",
   "description": "A project to collect and identify all of the world's string patterns",
+  "version": "0.0.0",
   "main": "main.js",
   "repository": "https://github.com/sunquan8094/patdetect",
   "dependencies": {
