@@ -1,0 +1,29 @@
+{
+  "range_title": "Numbers",
+  "range_title_slug": "numbers",
+  "start": "0",
+  "end": "9",
+  "patterns": [
+    {
+      "type":
+      {
+        "en-US": "Phone Numbers in the United States"
+      },
+      "pattern": "1-[0-9]{3}-[0-9]{3}-[0-9]{4}"
+    },
+    {
+      "type":
+      {
+        "en-US": "Social Security Numbers in the United States"
+      },
+      "pattern": "[0-9]{3}-[0-9]{2}-[0-9]{4}"
+    },
+    {
+      "type":
+      {
+        "en-US": "ZIP Codes in the United States"
+      },
+      "pattern": "[0-9]{5}(-[0-9]{4})?"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "range_title": "Hangeul",
+  "range_title_slug": "hangeul",
+  "start": "가",
+  "end": "힣",
+  "patterns":
+  [
+    {
+      "type": {
+        "en-US": "License Plates in South Korea - Private Vehicles"
+      },
+      "pattern": "[가나다라마거너더러머버서어저고노도로모보소오조구누두루무부수우주][0-9]{4}"
+    }
+  ]
+}

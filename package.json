@@ -1,0 +1,9 @@
+{
+  "name": "patdetect",
+  "description": "A project to collect and identify all of the world's string patterns",
+  "main": "main.js",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "ls": "^0.2.1"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "range_title": "Hanzi",
+  "range_title_slug": "hanzi",
+  "start": "一",
+  "end": "龥",
+  "patterns":
+  [
+    {
+      "type":
+      {
+        "en-US": "License Plates in the People's Republic of China - Compact Vehicles"
+      },
+      "pattern": "[京渝沪津皖闽甘粤贵琼冀黑豫鄂湘苏赣吉辽青陕鲁晋川云浙桂蒙宁藏新][A-R][0-9]{4}"
+    }
+  ]
+}
