@@ -31,6 +31,7 @@ if (r == contents.regexps.length) {
 
 for (var p = 0; p < contents.regexps[r].patterns.length; p++) {
   if (str.match(new RegExp("^" + contents.regexps[r].patterns[p].pattern + "$"))) {
+    console.log(new RegExp("^" + contents.regexps[r].patterns[p].pattern + "$"));
     retval.push(contents.regexps[r].patterns[p].type["en-US"]);
     funk_q.push(contents.regexps[r].patterns[p].func);
   }
@@ -45,8 +46,8 @@ else {
     console.log("- " + retval[g]);
     if (funk_q[g] !== "0")
     {
-      eval(funk_q[g].func);
-      eval(funk_q[g].cb);
+      eval("function func(str,cb) { " + funk_q[g].func + " }");
+      eval("var cb = " + funk_q[g].cb + ";");
       func(str, cb);
     }
   }
