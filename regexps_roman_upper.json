@@ -9,31 +9,36 @@
       "type": {
         "en-US": "Postal Abbreviations in Canada"
       },
-      "pattern": "AB|BC|MB|N[BLS-U]|ON|PE|QC|SK|YT"
+      "pattern": "AB|BC|MB|N[BLS-U]|ON|PE|QC|SK|YT",
+      "func": "0"
     },
     {
       "type": {
         "en-US": "Postal Codes in Canada"
       },
-      "pattern": "[A-CEGHJ-NP-TVXY][0-9][A-CEGHJ-NP-TV-Z] [0-9][A-CEGHJ-NP-TV-Z][0-9]"
+      "pattern": "[A-CEGHJ-NP-TVXY][0-9][A-CEGHJ-NP-TV-Z] [0-9][A-CEGHJ-NP-TV-Z][0-9]",
+      "func": "0"
     },
     {
       "type": {
         "en-US": "License Plates in the State of Hawaii, United States - Passenger Vehicles"
       },
-      "pattern": "[A-GJNPR-Y][A-GIN-Y]{2} [0-9]{3}"
+      "pattern": "[A-GJNPR-Y][A-GIN-Y]{2} [0-9]{3}",
+      "func": "0"
     },
     {
       "type": {
         "en-US": "Postal Abbreviations in the United States"
       },
-      "pattern": "A[AEKPLRSZ]|C[AOT]|D[CE]|F[LM]|G[AU]|HI|I[ADLN]|K[SY]|LA|M[ADEHIN-PST]|N[C-EHJMVY]|O[HKR]|P[ARW]|RI|S[CD]|T[NX]|UT|V[AIT]|W[AIVY]"
+      "pattern": "A[AEKPLRSZ]|C[AOT]|D[CE]|F[LM]|G[AU]|HI|I[ADLN]|K[SY]|LA|M[ADEHIN-PST]|N[C-EHJMVY]|O[HKR]|P[ARW]|RI|S[CD]|T[NX]|UT|V[AIT]|W[AIVY]",
+      "func": "0"
     },
     {
       "type": {
         "en-US": "Record Label Catalog Number"
       },
-      "pattern": "[A-Z0-9]+[A-Z][0-9]{3}[A-Z]?"
+      "pattern": "[A-Z0-9]+[A-Z][0-9]{3}[A-Z]?",
+      "func": "function func (str, cb) { var d = new Discogs(config.settings.discogs); return d.database().search(str, {}, cb); }"
     }
   ]
 }

@@ -2,7 +2,9 @@
   "name": "patdetect",
   "description": "A project to collect and identify all of the world's string patterns",
   "main": "main.js",
+  "repository": "https://github.com/sunquan8094/patdetect",
   "dependencies": {
+    "disconnect": "^1.1.0",
     "fs": "0.0.1-security",
     "ls": "^0.2.1"
   }

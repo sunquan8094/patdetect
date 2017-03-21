@@ -9,21 +9,24 @@
       {
         "en-US": "Phone Numbers in the United States"
       },
-      "pattern": "1-[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      "pattern": "1-[0-9]{3}-[0-9]{3}-[0-9]{4}",
+      "func": "0"
     },
     {
       "type":
       {
         "en-US": "Social Security Numbers in the United States"
       },
-      "pattern": "[0-9]{3}-[0-9]{2}-[0-9]{4}"
+      "pattern": "[0-9]{3}-[0-9]{2}-[0-9]{4}",
+      "func": "0"
     },
     {
       "type":
       {
         "en-US": "ZIP Codes in the United States"
       },
-      "pattern": "[0-9]{5}(-[0-9]{4})?"
+      "pattern": "[0-9]{5}(-[0-9]{4})?",
+      "func": "0"
     }
   ]
 }
