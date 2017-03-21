@@ -23,6 +23,10 @@ process.stdout.write("All other edits will be reviewed on a case-by-case basis.\
 process.stdout.write("## Contact Information\n");
 process.stdout.write("- Email: sunquan8094 dot gmail dot com\n\n");
 
+process.stdout.write("## In-person Demonstrations\n");
+process.stdout.write("As I have yet to publicly release execution instructions, I am willing to do in-person demonstrations. ");
+process.stdout.write("If you just so happen to be on the island of O'ahu in Hawaii and would like to see this in action, feel free to email me to arrange a demonstration date and time. Location is negotiable as long as it is on the island.\n\n");
+
 process.stdout.write("## Table of Contents\n");
 for (var o = 0; o < contents.regexps.length; o++) {
   process.stdout.write((o+1) + ". [" + contents.regexps[o].range_title + "](#" + contents.regexps[o].range_title_slug + ")\n");

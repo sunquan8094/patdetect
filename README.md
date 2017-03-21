@@ -11,6 +11,9 @@ Please do not edit the README.md file yourself. The only things I shall see in t
 ## Contact Information
 - Email: sunquan8094 dot gmail dot com
 
+## In-person Demonstrations
+As I have yet to publicly release execution instructions, I am willing to do in-person demonstrations. If you just so happen to be on the island of O'ahu in Hawaii and would like to see this in action, feel free to email me to arrange a demonstration date and time. Location is negotiable as long as it is on the island.
+
 ## Table of Contents
 1. [Hangeul](#hangeul)
 2. [Hanzi](#hanzi)
