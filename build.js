@@ -1,15 +1,23 @@
 const fs = require("fs");
+const ls = require("ls");
 
 var contents = {};
 contents.regexps = [];
-contents.regexps.push(JSON.parse(fs.readFileSync('regexps_hangeul.json', 'utf8')));
-contents.regexps.push(JSON.parse(fs.readFileSync('regexps_hanzi.json', 'utf8')));
-contents.regexps.push(JSON.parse(fs.readFileSync('regexps_numbers.json', 'utf8')));
-contents.regexps.push(JSON.parse(fs.readFileSync('regexps_roman_upper.json', 'utf8')));
+ls("./*", {type: 'file'}, /regexps_.*json/, function(file) {
+  contents.regexps.push(JSON.parse(fs.readFileSync(file.file, 'utf8')));
+});
 
 process.stdout.write("# PatDetect Project\n");
-process.stdout.write("\n");
-process.stdout.write("This project aims to enumerate all of the world's commonly used string patterns.\n");
+process.stdout.write("This project aims to enumerate all of the world's commonly used string patterns.\n\n");
+
+process.stdout.write("## Contributing\n");
+process.stdout.write("Please do not edit the README.md file yourself. ");
+process.stdout.write("The only things I shall see in the PRs submitted to me will be appropriate ");
+process.stdout.write("edits to the `regexp_*.json` files. ");
+process.stdout.write("All other edits will be reviewed on a case-by-case basis.\n\n");
+
+process.stdout.write("## Contact Information\n");
+process.stdout.write("- Email: sunquan8094 dot gmail dot com\n\n");
 
 process.stdout.write("## Table of Contents\n");
 for (var o = 0; o < contents.regexps.length; o++) {

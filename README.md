@@ -1,6 +1,12 @@
 # PatDetect Project
-
 This project aims to enumerate all of the world's commonly used string patterns.
+
+## Contributing
+Please do not edit the README.md file yourself. The only things I shall see in the PRs submitted to me will be appropriate edits to the `regexp_*.json` files. All other edits will be reviewed on a case-by-case basis.
+
+## Contact Information
+- Email: sunquan8094 dot gmail dot com
+
 ## Table of Contents
 1. [Hangeul](#hangeul)
 2. [Hanzi](#hanzi)
