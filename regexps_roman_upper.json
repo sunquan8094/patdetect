@@ -38,7 +38,10 @@
         "en-US": "Record Label Catalog Number"
       },
       "pattern": "[A-Z0-9]+[A-Z][0-9]{3}[A-Z]?",
-      "func": "function func (str, cb) { var d = new Discogs(config.settings.discogs); return d.database().search(str, {}, cb); }"
+      "func": {
+        "func": "function func (str, cb) { var d = new Discogs(config.settings.discogs); return d.database().search(str, {}, cb); }",
+        "cb": "function cb(err, data) { if (!err) console.log('* ' + data.results[0].title); }"
+      }
     }
   ]
 }

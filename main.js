@@ -17,7 +17,6 @@ var funk_q = [];
 var r = 0;
 
 for (r = 0; r < contents.regexps.length; r++) {
-  console.log(r);
   if (str.charCodeAt(0) >= contents.regexps[r].start.charCodeAt(0) && str.charCodeAt(0) <= contents.regexps[r].end.charCodeAt(0)) {
     break;
   }
@@ -44,11 +43,9 @@ else {
     console.log("- " + retval[g]);
     if (funk_q[g] !== "0")
     {
-      eval(funk_q[g]);
-      func(str, function(err, data)
-      {
-        if (!err) console.log("* " + data.results[0].title);
-      });
+      eval(funk_q[g].func);
+      eval(funk_q[g].cb);
+      func(str, cb);
     }
   }
 }
