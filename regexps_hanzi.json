@@ -11,7 +11,10 @@
         "en-US": "License Plates in the People's Republic of China - Compact Vehicles"
       },
       "pattern": "([京渝沪津皖闽甘粤贵琼冀黑豫鄂湘苏赣吉辽青陕鲁晋川云浙桂蒙宁藏新][A-R][0-9]{4})",
-      "func": "0"
+      "func": {
+        "func": "var p = '京渝沪津皖闽甘粤贵琼冀黑豫鄂湘苏赣吉辽青陕鲁晋川云浙桂蒙宁藏新'; var t = ['Beijing','Chongqing','Shanghai','Tianjin','Anhui','Fujian','Gansu','Guangdong','Guizhou','Hainan','Hebei','Heilongjiang','Henan','Hubei','Hunan','Jiangsu','Jiangxi','Jilin','Liaoning','Qinghai','Shaanxi','Shandong','Shanxi','Sichuan','Yunnan','Zhejiang','Guangxi','Inner Mongolia','Ningxia','Tibet','Xinjiang']; cb(t[p.indexOf(str.charAt(0))]);",
+        "cb": "(str) => console.log('* ' + str);"
+      }
     }
   ]
 }
