@@ -1,0 +1,13 @@
+{
+  "settings":
+  {
+    "discogs":
+    {
+      "consumerKey": "",
+      "consumerSecret": ""
+    },
+    "zipcodeapi": {
+      "key": ""
+    }
+  }
+}

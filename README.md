@@ -5,6 +5,14 @@ This project aims to enumerate all of the world's commonly used string patterns.
 - [Discogs API](https://www.discogs.com/developers/)
 - [ZipCodeAPI.com](https://www.zipcodeapi.com/)
 
+## Getting Started
+In order to run the application, you will need a file called `settings.json` and valid credentials for the above dependencies. Please refer to the the above links for instructions on obtaining credentials. Please also note that any applicable limits will be enforced by the hosts.
+I have put `settings.json` in the `.gitignore` file for obvious reasons, so here is a workaround I strongly advise that you follow: 
+
+1. Copy `settings_template.json` into a file called `settings.json`.
+2. Fill in the blanks accordingly.
+3. Execute it within the bounds of the limits by executing `node main.js <query>` in your command line interface.
+
 ## Contributing
 Please do not edit the README.md file yourself. The only things I shall see in the PRs submitted to me will be appropriate edits to the `regexp_*.json` files. All other edits will be reviewed on a case-by-case basis.
 
@@ -12,7 +20,7 @@ Please do not edit the README.md file yourself. The only things I shall see in t
 - Email: sunquan8094 dot gmail dot com
 
 ## In-person Demonstrations
-As I have yet to publicly release execution instructions, I am willing to do in-person demonstrations. If you just so happen to be on the island of O'ahu in Hawaii and would like to see this in action, feel free to email me to arrange a demonstration date and time. Location is negotiable as long as it is on the island.
+As I have yet to make a public release, I am willing to do in-person demonstrations. If you just so happen to be on the island of O'ahu in Hawaii and would like to see this in action, feel free to email me to arrange a demonstration date and time. Location is negotiable as long as it is on the island.
 
 ## Table of Contents
 1. [Hangeul](#hangeul)
